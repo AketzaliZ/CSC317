@@ -14,10 +14,11 @@
     </header>
     <nav>
         <ul>
-           <li>link to section 1</li>
-           <li>link to section 2</li>
-           <li>link to section 3</li>
-        </ul>      
+            <li><a href="#home">Education</a></li>
+            <li><a href="#news">Experience</a></li>
+            <li><a href="#contact">Skills</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>  
     </nav>
     
     <main>
@@ -73,11 +74,32 @@
                 </tr>
              </table>
        </section>
-       <section id="section-3"></section>
+       <section id="skills"></section>
     </main>
     
     <footer>
-       <section id="contacts"></section>
+       <section id="contacts">
+        <h3>Contact</h3>
+        <form action="/submit" method="post">
+            <label for="name" style="padding: 10px;">Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+
+            <label for="email" style="padding: 10px;">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+
+            <label for="subject" style="padding-left: 10px;">Subject:</label>
+            <input type="text" id="subject" name="Subject">
+            <br>
+
+            <p><label for="message" style="padding: 10px;">Your Message:</label></p>
+            <textarea id="message" name="message" rows="4" cols="30" ></textarea>
+            <br>
+          
+            <button type="submit">Submit</button>
+          </form>
+       </section>
     </footer>
 </body>
 </html>
