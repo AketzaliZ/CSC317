@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width">
     <title>Aketzali Zeledon - Portfolio</title>
 </head>
 <body>
@@ -14,10 +14,10 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#home">Education</a></li>
-            <li><a href="#news">Experience</a></li>
-            <li><a href="#contact">Skills</a></li>
-            <li><a href="#about">Contact</a></li>
+            <li><a href="#school">Education</a></li>
+            <li><a href="#jobs">Experience</a></li>
+            <li><a href="#skills">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>  
     </nav>
     
@@ -74,19 +74,40 @@
                 </tr>
              </table>
        </section>
-       <section id="skills"></section>
+       <section id="skills">
+        <article>
+            <h3>Flea Market 3D Render</h3>
+            <img src="assets/marketPOV.png" alt="Flea Market Front Render" height="200">
+            <img src="assets/marketBird.png" alt="Flea Market Side Render" height="200">
+            <p> A program, which reads-in and renders an indexed face set meshes to an image via 
+                software rasterization.The Scene is ment to convey an empty outdoor market with 
+                stalls and picnic tables. When making this project I was thinking about the 
+                San Jose Flea Market. It has been a staple of the Latino Community and now the 
+                property owners are trying to sell the land, forcing many vendors to find other 
+                work resulting in the community losing another influencial cultural hub.
+            </p>
+
+            <h3>Tank Game</h3>
+            <img src="assets/tankgame.png" alt="Tank Game Screenshot" height="200">
+            <p> The Tank Game is a 2 player 2D game where the tanks shoot each other with 
+                projectiles until one runs out of lives. To enhance gameplay, there are game 
+                objects such as walls and power-ups that the player may collect to defeat 
+                their opponent player.
+            </p>
+        </article>
+       </section>
     </main>
     
     <footer>
-       <section id="contacts">
+       <section id="contact">
         <h3>Contact</h3>
         <form action="/submit" method="post">
             <label for="name" style="padding: 10px;">Name:</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required>
             <br>
 
             <label for="email" style="padding: 10px;">Email:</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
             <br>
 
             <label for="subject" style="padding-left: 10px;">Subject:</label>
