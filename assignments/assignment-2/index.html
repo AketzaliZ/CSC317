@@ -6,7 +6,7 @@
 </head>
 <body>
     <header>
-       <h1>Aketzali Zeledon</h1>
+       <h1 id="home">Aketzali Zeledon</h1>
        <img src="assets/profilePic.jpg" alt="Aketzali's profile picture" width="200">
        <h2>San Francisco State University</h2>
        <img src="assets/sfsuLogo.jpg" alt="SFSU Logo" width="50">
@@ -18,6 +18,7 @@
             <li><a href="#school">Education</a></li>
             <li><a href="#jobs">Experience</a></li>
             <li><a href="#skills">Projects</a></li>
+            <li><a href="#hobbies">Leisure: Baking</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>  
     </nav>
@@ -25,15 +26,9 @@
     <main>
        <section id="school">
             <h2>Education</h2>
-            <ul>
-                <li style="font-size: 18px;">San Francisco State University
-                   <ul>
-                      <li>Major: Computer Science B.S.</li>
-                      <li>Expected Graduation: 2025</li>
-                   </ul>
-                </li>
-             </ul>
+            <p>San Francisco State Univerrsity <br> Major: Computer Science B.S.</p>
        </section>
+       <hr>
        <section id="jobs">
             <h2>Experience</h2>
             <table>
@@ -74,44 +69,51 @@
                     </td>
                 </tr>
              </table>
+             <hr>
        </section>
        <section id="skills">
-        <article>
-            <h3>Flea Market 3D Render</h3>
-            <img src="assets/marketPOV.png" alt="Flea Market Front Render" height="200">
-            <img src="assets/marketBird.png" alt="Flea Market Side Render" height="200">
-            <p> A program, which reads-in and renders an indexed face set meshes to an image via
+        <h2>Projects</h2>
+
+            <article>
+                <h3>Flea Market 3D Render</h3>
+                <img src="assets/marketPOV.png" alt="Flea Market Front Render" height="200">
+                <img src="assets/marketBird.png" alt="Flea Market Side Render" height="200">
+                <p> A program, which reads-in and renders an indexed face set meshes to an image via
                 software rasterization.The Scene is ment to convey an empty outdoor market with
                 stalls and picnic tables. When making this project I was thinking about the
                 San Jose Flea Market. It has been a staple of the Latino Community and now the
                 property owners are trying to sell the land, forcing many vendors to find other
                 work resulting in the community losing another influencial cultural hub.
-            </p>
+                </p>
+            </article>
 
-
-            <h3>Tank Game</h3>
-            <iframe  height="250" src="https://www.youtube.com/embed/fsVNfYlg0KA?si=3r_POJ0Z1WwMuLO1" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <img src="assets/tankgame.png" alt="Tank Game Screenshot" height="250">
-            <p> The Tank Game is a 2 player 2D game where the tanks shoot each other with
+            <article>
+                <h3>Tank Game</h3>
+                <iframe  height="250" src="https://www.youtube.com/embed/fsVNfYlg0KA?si=3r_POJ0Z1WwMuLO1" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img src="assets/tankgame.png" alt="Tank Game Screenshot" height="250">
+                <p> The Tank Game is a 2 player 2D game where the tanks shoot each other with
                 projectiles until one runs out of lives. To enhance gameplay, there are game
                 objects such as walls and power-ups that the player may collect to defeat
                 their opponent player.
-            </p>
+                </p>
+            </article>
 
+            <article>
+                <h3>Socially Responsible Computing</h3>
+                <iframe  height="350" width="700" src="https://docs.google.com/presentation/d/1nR6EBxnO0fJmSatxJXcy6vC34Z2BPvx2gkYdHIpA49A/edit?usp=sharing" 
+                title="Google Slide for hearing Aid Render">
+                </iframe>
+                <p> Collaborated on a 3D Rendered Tutorial For a Hearing Aid, 
+                    with cross pixel detection for incorrectly placed hearing aids.
+                </p>
+            </article>
 
-            <h3>Socially Responsible Computing</h3>
-            <iframe src="https://github.com/Rafael-Leitao/CSC630-Socially-Responsible-Computing" title="Github Link to hearing Aid">
-            </iframe>
-            <p> Collaborated on a 3D Rendered Tutorial For a Hearing Air.</p>
-           
-        </article>
-
-
+        <hr>
        </section>
        <section id="hobbies">
-        <h2>Baking</h2>
+        <h2>Recreational Baking</h2>
         <table>
             <tr>
                 <td>Lemon Macarons</td>
@@ -126,17 +128,24 @@
                 <td><img src="assets/appleCookie.webp" alt="Tank Game Screenshot" height="300"></td>
             </tr>
         </table>
+        
         <p>Below is my favorite Channel to follow when making new baking recipes.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7jp91jrTUNk?si=GjXbUW7noU31cg4E"
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        <!--Below is the embedded iframe copied from Youtube share-->
+        <iframe  height="300" src="https://www.youtube.com/embed/7jp91jrTUNk?si=GjXbUW7noU31cg4E"
+        title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen></iframe>
        </section>
+
     </main>
    
     <footer>
+        
+       <a href="#home" ><p style="padding: 5%;"> &uArr; Back to Top &uArr;</p></a>
+
+       <hr>
        <section id="contact">
-        <h3>Contact</h3>
+        <h3>&#128231;   Contact</h3>
         <form action="/submit" method="post">
             <label for="name" style="padding: 10px;">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -157,7 +166,7 @@
             <textarea id="message" name="message" rows="4" cols="30" ></textarea>
             <br>
          
-            <button type="submit">Submit</button>
+            <button style="background-color: palevioletred; color: black;"type="submit">Submit</button>
           </form>
        </section>
     </footer>
