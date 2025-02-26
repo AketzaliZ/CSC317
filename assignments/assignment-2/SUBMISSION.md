@@ -2,7 +2,7 @@
 
 **Name:** Aketzali Zeledon
 **Student ID:** 917079584
-**GitHub Username:** Aketzali Zeledon 
+**GitHub Username:** AketzaliZ
 **Assignment Number:** 2  
 
 
