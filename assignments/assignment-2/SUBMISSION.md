@@ -36,7 +36,7 @@ I used html tables to organize sections of data and information. For example, th
             <td><img src="assets/appleCookie.webp" alt="Tank Game Screenshot" height="300"></td>
         </tr>
     </table>
-
+```
 For the Projects section, I decided to utilize the semantic element of article because the content of each project was different. 
 
 ```html
@@ -52,7 +52,7 @@ For the Projects section, I decided to utilize the semantic element of article b
         work resulting in the community losing another influencial cultural hub.
     </p>
 </article>
-
+```
 One of the most user friendly aspects i integrated was the navigation portion that allowed users
 to quickly jump to specific parts of the page. I also decided to have an option to jump back to the header from the bottom of the page.
 
@@ -66,5 +66,8 @@ to quickly jump to specific parts of the page. I also decided to have an option 
         <li><a href="#contact">Contact</a></li>
      </ul>  
 </nav>
+```
 ...
+
+```html
 <a href="#home" ><p style="padding: 5%;"> ^ Back to Top ^</p></a>
