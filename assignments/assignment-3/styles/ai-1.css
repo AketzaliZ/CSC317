@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif; /* Whimsical, easy-to-read font */
+    background-color: #fdf6f0; /* Soft warm tone */
+    color: #5a3e2b; /* Deep brown text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #d4a373; /* Warm earthy brown */
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffe8d6; /* Light cream hover effect */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffebe5; /* Soft pink */
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 30px;
+}
+
+.profile-circle {
+    border-radius: 50%; /* Rounded image for a soft, cute look */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Sections */
+section {
+    padding: 30px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #8c5b3e; /* Warm brown tone */
+    text-align: center;
+}
+
+/* Projects and Baking Grid */
+.item8-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.treat img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d4a373;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #d4a373;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b87b5e;
+}
+
+/* Footer */
+footer {
+    background-color: #d4a373;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
