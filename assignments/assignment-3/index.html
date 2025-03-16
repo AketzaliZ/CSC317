@@ -6,7 +6,7 @@
     <meta name="description" content="Aketzali's portfolio, hobbies, and contact form.">
     <meta name="keywords" content="SFSU, baking, 3D Render, game">
     <meta name="author" content="Aketzali Zeledon">
-    <!-- <link rel="stylesheet" href="styles/hybrid.css"> -->
+    
     <link rel="stylesheet" href="styles/hybrid.css" id="css-theme">
     <link rel="icon" href="images/faviconLogo.jpg" type="image/x-icon">
 
@@ -245,7 +245,6 @@
         <button class="theme-button active" data-theme="styles">Hand-Written</button>
         <button class="theme-button" data-theme="ai-1">AI 1</button>
         <button class="theme-button" data-theme="ai-2">AI 2</button>
-        <button class="theme-button" data-theme="ai-3">AI Image</button>
         <button class="theme-button" data-theme="hybrid">Hybrid</button>
     </div>
 </div>
@@ -283,7 +282,7 @@
                 setActiveTheme(themeName);
             });
         });
-
+        
         // Check if there's a saved theme preference
         const savedTheme = localStorage.getItem('preferredTheme');
         if (savedTheme) {
