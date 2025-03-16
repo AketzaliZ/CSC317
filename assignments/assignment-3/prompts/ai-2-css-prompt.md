@@ -1,7 +1,6 @@
 I'm looking to create a CSS file for my portfolio website inspired by this image. I'd like to incorporate elements from the image such as its colors, textures, and overall mood into my site design.
 
-[Insert your image here]
-
+![Inspiration Image Given to AI](inspo.png)
 Please generate a CSS file that:
 
 Uses the color palette extracted from this image
