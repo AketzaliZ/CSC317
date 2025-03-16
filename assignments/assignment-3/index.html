@@ -6,9 +6,56 @@
     <meta name="description" content="Aketzali's portfolio, hobbies, and contact form.">
     <meta name="keywords" content="SFSU, baking, 3D Render, game">
     <meta name="author" content="Aketzali Zeledon">
-    <link rel="stylesheet" href="styles/ai-2.css">
-
+    <!-- <link rel="stylesheet" href="styles/hybrid.css"> -->
+    <link rel="stylesheet" href="styles/hybrid.css" id="css-theme">
     <link rel="icon" href="images/faviconLogo.jpg" type="image/x-icon">
+
+    
+    <style>
+        /* Theme Switcher Styling */
+        .theme-switcher {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            padding: 12px;
+            z-index: 1000;
+        }
+
+        .theme-switcher h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .theme-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .theme-button {
+            padding: 8px 12px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .theme-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .theme-button.active {
+            background-color: #c33f6d;
+            color: white;
+            border-color: #ae2e73;
+        }
+    </style>
     <title>Aketzali Zeledon - Portfolio</title>
 </head>
 <body>
@@ -30,6 +77,7 @@
     <main class="grid-container">
         <div class="item3"><img src="images/profilePic.jpg" alt="Profile Pic" class="profile-circle "></div>
         <div class="item4">
+            <div class="bee">&#128029;   &#128029;   &#128029;</div>
             <p> I'm a computer science student from San Jose California. <br>
             I love creating through programming and learning new technologies.</p>
         </div>
@@ -156,7 +204,7 @@
                     allowfullscreen></iframe>
                 </div>
                 <div class="treat">
-                    <h3>Straberry Chocolate Cake</h3>
+                    <h3>Strawberry Chocolate Cake</h3>
                     <img src="images/cake.webp" alt="Chocolate cake w/ whip creme" height="300">
                 </div>
             </div>
@@ -190,5 +238,59 @@
             </section>
         </div>
     </footer>
+<!-- Theme Switcher -->
+<div class="theme-switcher">
+    <h3>Theme Switcher</h3>
+    <div class="theme-buttons">
+        <button class="theme-button active" data-theme="styles">Hand-Written</button>
+        <button class="theme-button" data-theme="ai-1">AI 1</button>
+        <button class="theme-button" data-theme="ai-2">AI 2</button>
+        <button class="theme-button" data-theme="ai-3">AI Image</button>
+        <button class="theme-button" data-theme="hybrid">Hybrid</button>
+    </div>
+</div>
+
+<!-- Theme Switcher Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all theme buttons
+        const themeButtons = document.querySelectorAll('.theme-button');
+        // Get the stylesheet link element
+        const themeStylesheet = document.getElementById('css-theme');
+
+        // Function to set active theme
+        function setActiveTheme(themeName) {
+            // Update stylesheet href
+            themeStylesheet.href = `styles/${themeName}.css`;
+
+            // Update active button state
+            themeButtons.forEach(button => {
+                if (button.dataset.theme === themeName) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
+
+            // Save preference to localStorage
+            localStorage.setItem('preferredTheme', themeName);
+        }
+
+        // Add click event to all theme buttons
+        themeButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const themeName = this.dataset.theme;
+                setActiveTheme(themeName);
+            });
+        });
+
+        // Check if there's a saved theme preference
+        const savedTheme = localStorage.getItem('preferredTheme');
+        if (savedTheme) {
+            setActiveTheme(savedTheme);
+        }
+    });
+</script>
+
 </body>
 </html>
