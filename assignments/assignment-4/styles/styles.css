@@ -1,0 +1,176 @@
+/* grid container is the main container for organizing the content of the entire page*/
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header menu menu'
+      'main main main right right right'
+      'edu edu edu edu edu edu'
+      'exp exp exp exp exp exp'
+      'proj proj proj proj proj proj'
+      'bake bake bake bake bake bake'
+      'footer footer footer footer footer footer';
+    gap: 10px;
+    background-image: url("../images/gingham.png");
+    background-color: #e7d9aa;/* soft beige incase image isnt supported*/
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: #f7efd2ea;
+    color:#000;
+    padding: 10px;
+  }
+  
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; justify-self: end;  }
+  .item4 { 
+    grid-area: right; 
+    align-items: center;
+    justify-self: start; 
+}
+  .item5 { grid-area: edu; }
+  .item6 { grid-area: exp; }
+  .item7 { grid-area: proj; }
+  .item8 { grid-area: bake; }
+  .item11 { grid-area: footer; }
+
+/* the nested grid for the baking section 3by3*/
+  .item8-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.treat {
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+header {
+    background-color: #8fa571; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Below i applied a header container to organize the page intro and navigation */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+/* Below i applied the colors to the nav bar
+I also applied the hover effect to turn pink */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #f3a1b6;
+}
+
+/* attempted responsive */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+      }
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .item3, .item4 {
+        justify-self: center;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "menu"
+            "main"
+            "right"
+            "edu"
+            "exp"
+            "proj"
+            "bake"
+            "footer";
+        gap: 10px;
+        text-align: center;
+    }
+    
+}
+@media (min-width: 1024px) {
+    body {
+      font-size: 20px;
+    }
+}
+
+/* footer styling and footer container for organization*/
+footer {
+    background-color: #8fa571;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-circle {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+  }
+  button{
+    background-color: 		#d8fca8; 
+    color:#949494;
+  }
+  button:hover{
+    background-color: #f3a1b6;
+    color:#ffffff;
+  }
+  /*in the footer i added a bee emoji
+  then the following code animates it to fly around*/
+
+.bee{
+    position: relative;
+    animation-name: fly;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes fly {
+    0%   { left:0px; top:0px;}
+    25%  { left:100px; top:-3200px;}
+    55%  { left:300px; top:-3600px;}
+    75%  { left:50px; top:-3500px;}
+    100% {left:0px; top:0px;}
+  }

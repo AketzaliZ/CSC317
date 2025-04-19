@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Aketzali's portfolio, hobbies, and contact form.">
+    <meta name="keywords" content="SFSU, baking, 3D Render, game">
+    <meta name="author" content="Aketzali Zeledon">
+    
+    <link rel="stylesheet" href="styles/hybrid.css" id="css-theme">
+    <link rel="icon" href="images/faviconLogo.jpg" type="image/x-icon">
+
+    
+    <style>
+        /* Theme Switcher Styling */
+        .theme-switcher {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            padding: 12px;
+            z-index: 1000;
+        }
+
+        .theme-switcher h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .theme-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .theme-button {
+            padding: 8px 12px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .theme-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .theme-button.active {
+            background-color: #c33f6d;
+            color: white;
+            border-color: #ae2e73;
+        }
+    </style>
+    <title>Aketzali Zeledon - Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 id="home">Hi, my name is Aketzali Zeledon!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#school">Education</a></li>
+                    <li><a href="#jobs">Experience</a></li>
+                    <li><a href="#skills">Projects</a></li>
+                    <li><a href="#hobbies">Leisure: Baking</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="grid-container">
+        <div class="item3"><img src="images/profilePic.jpg" alt="Profile Pic" class="profile-circle "></div>
+        <div class="item4">
+            <div class="bee">&#128029;   &#128029;   &#128029;</div>
+            <p> I'm a computer science student from San Jose California. <br>
+            I love creating through programming and learning new technologies.</p>
+        </div>
+        <div class="item5">
+            <section id="school">
+                <h2>Education</h2>
+                <img src="images/sfsuLogo.jpg" alt="SFSU Logo" width="50">
+                <p>San Francisco State Univerrsity <br> Major: Computer Science B.S.</p>
+            </section>
+        </div>
+        <div class="item6">
+            <section id="jobs">
+                <h2>Experience</h2>
+                <table>
+                    <tr>
+                        <td>Hotel Receptionist<br> Hotel Strata</td>
+                        <td>May 2020 - Current</td>
+                     </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Networked and coordinated guest experiences.</li>
+                             </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                       <td>Project Connect Intern<br> Associated Students</td>
+                       <td>August 2019</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Organized student outreach and provided mentorship for incoming students.</li>
+                                <li>Connecting students with various college resources.</li>
+                                <li>Leading student workshops focused on student aid and retention.</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Code Coach<br>theCoderSchool</td>
+                        <td>August 2020</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Instructed students 8 to 12 years old on Web and App Development.</li>
+                                <li>Led in group excersizes surrounding teamwork, problem solving, and cybersecurity</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                   </tr>
+                 </table>
+           </section>
+        </div>
+        <div class="item7">
+            <section id="skills">
+                <h2>Projects</h2>
+        
+                    <article>
+                        <h3>Flea Market 3D Render</h3>
+                        <img src="images/marketPOV.png" alt="Flea Market Front Render" height="200">
+                        <img src="images/marketBird.png" alt="Flea Market Side Render" height="200">
+                        <p> A program, which reads-in and renders an indexed face set meshes to an image via
+                        software rasterization.The Scene is ment to convey an empty outdoor market with
+                        stalls and picnic tables. When making this project I was thinking about the
+                        San Jose Flea Market. It has been a staple of the Latino Community and now the
+                        property owners are trying to sell the land, forcing many vendors to find other
+                        work resulting in the community losing another influencial cultural hub.
+                        </p>
+                    </article>
+        
+                    <article>
+                        <h3>Tank Game</h3>
+                        <iframe  height="250" src="https://www.youtube.com/embed/fsVNfYlg0KA?si=3r_POJ0Z1WwMuLO1" 
+                        title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <img src="images/tankgame.png" alt="Tank Game Screenshot" height="250">
+                        <p> The Tank Game is a 2 player 2D game where the tanks shoot each other with
+                        projectiles until one runs out of lives. To enhance gameplay, there are game
+                        objects such as walls and power-ups that the player may collect to defeat
+                        their opponent player.
+                        </p>
+                    </article>
+        
+                    <article>
+                        <h3>Socially Responsible Computing</h3>
+                        <iframe  height="350" width="700" src="https://docs.google.com/presentation/d/1nR6EBxnO0fJmSatxJXcy6vC34Z2BPvx2gkYdHIpA49A/edit?usp=sharing" 
+                        title="Google Slide for hearing Aid Render">
+                        </iframe>
+                        <p> Collaborated on a 3D Rendered Tutorial For a Hearing Aid, 
+                            with cross pixel detection for incorrectly placed hearing aids.
+                        </p>
+                    </article>
+               </section>
+        </div>
+        <div class="item8">
+            <h2>Baking</h2>
+            <!--Below i applied a nested container to display baked goods in a grid-->
+            <div class="item8-container">
+                <div class="treat">
+                    <h3>Macarons</h3>
+                    <img src="images/macaron.jpg" alt="macaron" height="300">
+                </div>
+                <div class="treat">
+                    <h3>Shortbread Cookies</h3>
+                    <img src="images/cookie1.jpg" alt="shortbread cookie" height="300">
+                </div>
+                <div class="treat">
+                    <h3>Apple Cookies</h3>
+                    <img src="images/appleCookie.webp" alt="apple cookie" height="300">
+                </div>
+                <div class="treat">
+                    <h3>Madelines</h3>
+                    <img src="images/madeline.jpg" alt="madeline cookie" height="300">
+                </div>
+                <div class="treat">
+                    <p>Below is my favorite Channel to follow when making new baking recipes.</p>
+                    <!--Below is the embedded iframe copied from Youtube share-->
+                    <iframe  height="200" src="https://www.youtube.com/embed/7jp91jrTUNk?si=GjXbUW7noU31cg4E"
+                    title="YouTube video player" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="treat">
+                    <h3>Strawberry Chocolate Cake</h3>
+                    <img src="images/cake.webp" alt="Chocolate cake w/ whip creme" height="300">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <a href="#home" ><p> &uArr;Back to Top&uArr;</p></a>
+            <div class="bee">&#128029;</div>
+            <section id="contact">
+                <h3>&#128231;   Contact</h3>
+                <form action="/submit" method="post">
+                    <label for="name" style="padding: 10px;">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+
+                    <label for="email" style="padding: 10px;">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+
+                    <label for="subject" style="padding-left: 10px;">Subject:</label>
+                    <input type="text" id="subject" name="Subject">
+                    <br>
+
+                    <p><label for="message" style="padding: 10px;">Your Message:</label></p>
+                    <textarea id="message" name="message" rows="4" cols="30" ></textarea>
+                    <br>
+         
+                    <button  type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </footer>
+<!-- Theme Switcher -->
+<div class="theme-switcher">
+    <h3>Theme Switcher</h3>
+    <div class="theme-buttons">
+        <button class="theme-button active" data-theme="styles">Hand-Written</button>
+        <button class="theme-button" data-theme="ai-1">AI 1</button>
+        <button class="theme-button" data-theme="ai-2">AI 2</button>
+        <button class="theme-button" data-theme="hybrid">Hybrid</button>
+    </div>
+</div>
+
+<!-- Theme Switcher Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all theme buttons
+        const themeButtons = document.querySelectorAll('.theme-button');
+        // Get the stylesheet link element
+        const themeStylesheet = document.getElementById('css-theme');
+
+        // Function to set active theme
+        function setActiveTheme(themeName) {
+            // Update stylesheet href
+            themeStylesheet.href = `styles/${themeName}.css`;
+
+            // Update active button state
+            themeButtons.forEach(button => {
+                if (button.dataset.theme === themeName) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
+
+            // Save preference to localStorage
+            localStorage.setItem('preferredTheme', themeName);
+        }
+
+        // Add click event to all theme buttons
+        themeButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const themeName = this.dataset.theme;
+                setActiveTheme(themeName);
+            });
+        });
+        
+        // Check if there's a saved theme preference
+        const savedTheme = localStorage.getItem('preferredTheme');
+        if (savedTheme) {
+            setActiveTheme(savedTheme);
+        }
+    });
+</script>
+
+</body>
+</html>
