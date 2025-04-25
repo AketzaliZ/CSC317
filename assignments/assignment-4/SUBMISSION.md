@@ -5,7 +5,8 @@
 **GitHub Username:** AketzaliZ
 **Assignment Number:** 4
 **github repo link** https://github.com/AketzaliZ/CSC317/tree/main/assignments/assignment-4
-**github pages**  https://aketzaliz.github.io/CSC317/
+**github page Index**  https://aketzaliz.github.io/CSC317/assignments/assignment-4/index.html
+**github page calculator** http://aketzaliz.github.io/CSC317/assignments/assignment-4/calculator.html
 
 # Portfolio Styling Assignment Analysis
 
