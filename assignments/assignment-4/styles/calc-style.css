@@ -81,6 +81,7 @@ nav a {
   color: white;
   border-radius: 30px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -94,26 +95,25 @@ nav a:hover {
 .calc-container {
   background-color: black;
   padding: 20px;
-  max-width: 400px;
+  max-width: 300px;
   margin: auto;
 }
   
 .button-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 5px;
 }
   
 button {
-  width: 80px;
-  height: 80px;
-  font-size: 1.5rem;
-  padding: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 1rem;
+  padding: 10px;
   border: none;
   border-radius: 120%;
   background-color: #333;
   color: white;
-  transition: background 0.2s;
 }
   
 button:hover {
@@ -138,22 +138,43 @@ button.first-three:hover{
   background-color: rgb(152, 164, 178);
 }
 
-button.zero {
-  width: 200px;
+button.cero {
+  width: 120px;
   grid-column: span 2;
   border-radius: 40px;
 }
 .display {
-  background-color: black;
+  background-color: black; /* Make it black like a digital display */
   color: white;
   font-size: 1.5rem;
   text-align: right;
   padding: 20px;
   margin-bottom: 20px;
+  height: 50px;
+  width: 100%;
+  border: none;
   border-radius: 10px;
-  height: 70px;
   box-sizing: border-box;
   overflow: hidden;
   white-space: nowrap;
+  font-family: monospace;
 }
-  
+
+/* to match the example of professor of previous calculations*/
+.displaytwo {
+  background-color: black;
+  color: #cccccc;
+  font-size: 1rem;
+  opacity: 0.8;
+  text-align: right;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: monospace;
+}

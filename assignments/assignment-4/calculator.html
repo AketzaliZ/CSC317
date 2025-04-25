@@ -4,57 +4,50 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="calculator" />
-        <title>calculator project</title>
+        <title>Calculator Project</title>
         <link rel="stylesheet" href="styles/calc-style.css" />
+        <script src="scripts/calculator.js" defer></script>
     </head>
-    <script src="calc-script.js"></script>
     <body>
         <header>
             <div class="header-container">
                 <h1 id="home">Calculator Project</h1>
                 <nav>
                     <ul>
-                        <li><a href="#school">Education</a></li>
-                        <li><a href="#jobs">Experience</a></li>
-                        <li><a href="#skills">Projects</a></li>
-                        <li><a href="#hobbies">Leisure: Baking</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                      <li><a href="index.html">Home</a></li>
                     </ul>
-                </nav>
+                  </nav>                  
             </div>
         </header>
-
         <div class="calc-container">
-            <div class="display" id="display">0</div>
+            <input type="text" name="calculation" id="calculation" class="displaytwo" readonly />
+            <input type="text" name="display" id="display" class="display" readonly />
             <div class="button-container">
-                <!-- first -->
-                <button class="first-three">C</button>
-                <button class="first-three">+/-</button>
-                <button class="first-three">%</button>
-                <button class="operations">&divide;</button>
+                <!--first row-->
+                <button class="first-three" onclick="ac()" id="clear">C</button>
+                <button class="first-three" onclick="flipSign()" id="sign">+/-</button>
+                <button class="first-three" onclick="percentage()" id="percentage">%</button>
+                <button value="/" class="operations" onclick="addValue(this.value)" id="divide">&divide;</button>
 
                 <!--2nd-->
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="operations">&times;</button>
+                <button value="7" onclick="addValue(this.value)" id="seven">7</button>
+                <button value="8" onclick="addValue(this.value)" id="eight">8</button>
+                <button value="9" onclick="addValue(this.value)" id="nine">9</button>
+                <button value="*" class="operations" onclick="addValue(this.value)" id="multiply">&times;</button>
 
-                <!--3rd-->
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="operations">-</button>
+                <button value="4" onclick="addValue(this.value)" id="four">4</button>
+                <button value="5" onclick="addValue(this.value)" id="five">5</button>
+                <button value="6" onclick="addValue(this.value)" id="six">6</button>
+                <button value="-" class="operations" onclick="addValue(this.value)" id="minus">-</button>
 
-                <!--4th-->
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="operations">+</button>
+                <button value="1" onclick="addValue(this.value)" id="one">1</button>
+                <button value="2" onclick="addValue(this.value)" id="two">2</button>
+                <button value="3" onclick="addValue(this.value)" id="three">3</button>
+                <button value="+" class="operations" onclick="addValue(this.value)" id="plus">+</button>
 
-                <!-- last -->
-                <button class="zero">0</button>
-                <button>.</button>
-                <button class="operations">=</button>
+                <button value="0" onclick="addValue(this.value)" class="cero" id="zero">0</button>
+                <button value="." onclick="addValue(this.value)" id="dot">.</button>
+                <button value="=" class="operations" onclick="calculate()" id="equals">=</button>
             </div>
         </div>
     </body>
