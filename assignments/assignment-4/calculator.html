@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="calculator" />
         <title>Calculator Project</title>
-        <link rel="stylesheet" href="styles/calc-style.css" />
+        <link rel="stylesheet" href="styles/calculator.css" id="css-theme" />
         <script src="scripts/calculator.js" defer></script>
     </head>
     <body>
@@ -48,6 +48,14 @@
                 <button value="0" onclick="addValue(this.value)" class="cero" id="zero">0</button>
                 <button value="." onclick="addValue(this.value)" id="dot">.</button>
                 <button value="=" class="operations" onclick="calculate()" id="equals">=</button>
+            </div>
+        </div>
+        <div class="theme-switcher">
+            <h3>Theme Switcher</h3>
+            <div class="theme-buttons">
+                <button class="theme-button active" data-theme="calculator">Main</button>
+                <button class="theme-button" data-theme="theme1">theme 1</button>
+                <button class="theme-button" data-theme="theme2">theme 2</button>
             </div>
         </div>
     </body>
