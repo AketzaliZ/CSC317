@@ -2,9 +2,12 @@
 
 **Name:** Aketzali Zeledon 
 **Student ID:** 917079584
+
 **GitHub Username:** AketzaliZ
 **Assignment Number:** FINAL
+
 **github repo link** https://github.com/AketzaliZ/CSC317/tree/main/assignments/final
+
 **github page Index**  https://aketzaliz.github.io/CSC317/assignments/final
 
 **group Project link** https://triptuner-1mqe.onrender.com/
