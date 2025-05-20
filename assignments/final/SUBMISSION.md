@@ -1,22 +1,17 @@
-# CSC 317 Assignment 2 Submission
+# CSC 317 Assignment FINAL Submission
 
 **Name:** Aketzali Zeledon 
 **Student ID:** 917079584
 **GitHub Username:** AketzaliZ
-**Assignment Number:** 4
-**github repo link** https://github.com/AketzaliZ/CSC317/tree/main/assignments/assignment-4
-**github page Index**  https://aketzaliz.github.io/CSC317/assignments/assignment-4/index.html
-**github page calculator** http://aketzaliz.github.io/CSC317/assignments/assignment-4/calculator.html
+**Assignment Number:** FINAL
+**github repo link** https://github.com/AketzaliZ/CSC317/tree/main/assignments/final
+**github page Index**  https://aketzaliz.github.io/CSC317/assignments/final/index.html
 
-# Portfolio Styling Assignment Analysis
+# SUBMISSION.md
 
-## Analysis
-In all honesty the majority of the work I did for this is the css for making the calculator look as intended, i believe the professor provided us with most of the necessary rescources or code needed to just have us fill in any remaining gaps. The main challenge was figuring out the display box in the caluclator because i had thought everything would be in one display box and not actually in two input boxes.
+## Reflection on Group Travel Itinerary Project
 
+This project helped me better understand how full-stack applications are structured using the MVC pattern. 
+My main contribution was building the itinerary history feature, including the History model, historyController,delete function, and /history route.
 
-##  Any additional features or improvements
-Theme Switcher:
-I added 2 extra themes for my css of the calculaor: theme1.css and theme2.css. along with the original calculator.css
-
-## Acknoledgments
-I used many of the hints and resources provided by the professors skeleton code and the help and suggestions given during the lectures preceeding this assignment.
+One challenge I faced was figuring out what logic belonged in routes or controllers. With help from teammates and by reviewing the professor’s example structure, I learned how to separate responsibilities properly. Overall, this project improved my understanding of backend concepts and gave me more confidence working in a team setting.
